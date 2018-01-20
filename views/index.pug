@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  main
+    h1= title
+    p Click a league. Get the most recent results.
+    ul.list.pl0.measure.center
+      each league in leagues
+        li.lh-copy.pv3.ba.bl-0.br-0.bt-0.b--dotted.b--black-40
+          a(href='/leagues/' + league.id + '/' + league.currentMatchday).link.b.f5=league.caption
