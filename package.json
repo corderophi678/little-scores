@@ -1,9 +1,13 @@
 {
   "name": "little-scores",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
+  "engines": {
+    "node": "9.4.0"
+  },
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start:dev": "nodemon ./bin/www",
+    "start:prod": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
